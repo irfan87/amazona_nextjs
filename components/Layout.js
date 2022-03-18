@@ -1,27 +1,25 @@
+import { AppBar, Container, Toolbar, Typography } from "@material-ui/core";
+import Head from "next/head";
+import React from "react";
+import useStyles from "../utils/styles";
 
-import { AppBar, Container, Toolbar, Typography } from '@material-ui/core'
-import Head  from 'next/head'
-import React from 'react'
+export default function Layout({ children }) {
+	const classes = useStyles();
 
-export default function Layout({children}) {
 	return (
 		<div>
 			<Head>
 				<title>Next Amazona</title>
 			</Head>
-			<AppBar position='static'>
+			<AppBar position="static" className={classes.navbar}>
 				<Toolbar>
 					<Typography>Amazona</Typography>
 				</Toolbar>
 			</AppBar>
-			<Container>
-				{children}
-			</Container>
-			<footer>
-				<Typography>
-					All rights reserved. Next Amazona.
-				</Typography>
+			<Container className={classes.main}>{children}</Container>
+			<footer className={classes.footer}>
+				<Typography>All rights reserved. Next Amazona.</Typography>
 			</footer>
 		</div>
-	)
+	);
 }
