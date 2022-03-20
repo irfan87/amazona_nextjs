@@ -46,7 +46,7 @@ export default function ProductScreen() {
 				<Grid item md={3} xs={12}>
 					<List>
 						<ListItem>
-							<Typography component="h1" variant="strong" gutterBottom>
+							<Typography component="h1" variant="h1" gutterBottom>
 								{product.brand}
 							</Typography>
 						</ListItem>
