@@ -56,7 +56,7 @@ export default function ProductScreen() {
 							</Typography>
 						</ListItem>
 						<ListItem>
-							<Typography component="h4" variant="strong" gutterBottomy>
+							<Typography component="h4" variant="strong" gutterBottom>
 								Rating: {product.rating} stars ({product.numReviews} reviews)
 							</Typography>
 						</ListItem>
